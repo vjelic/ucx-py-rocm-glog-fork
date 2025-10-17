@@ -12,26 +12,26 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "a8e486e3-d8fa-3062-9620-1f29e1798b88",
-              "name": "resources.rules.remove-package-cache",
+              "id": "bc1ee7a2-47f6-32bc-90d6-9f950d92f0c2",
+              "name": "resources.rules.missing-image-version",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.remove-package-cache"
+                "text": "Opengrep Finding: resources.rules.missing-image-version"
               },
               "fullDescription": {
-                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
+                "text": "Images should be tagged with an explicit version to produce deterministic container images."
               },
               "defaultConfiguration": {
                 "enabled": true,
                 "level": "warning"
               },
               "help": {
-                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3009](https://github.com/hadolint/hadolint/wiki/DL3009)\n"
+                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.remove-package-cache"
+                  "resources.rules.missing-image-version"
                 ]
               }
             },
@@ -61,7 +61,7 @@
               }
             },
             {
-              "id": "0f796f12-eab0-3b21-bc2f-d705ffa15070",
+              "id": "a8e486e3-d8fa-3062-9620-1f29e1798b88",
               "name": "resources.rules.remove-package-cache",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.remove-package-cache"
@@ -85,31 +85,7 @@
               }
             },
             {
-              "id": "bc1ee7a2-47f6-32bc-90d6-9f950d92f0c2",
-              "name": "resources.rules.missing-image-version",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-image-version"
-              },
-              "fullDescription": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-image-version"
-                ]
-              }
-            },
-            {
-              "id": "1fea7095-4aa4-39e5-87fb-6cb9fa564a0c",
+              "id": "0f796f12-eab0-3b21-bc2f-d705ffa15070",
               "name": "resources.rules.remove-package-cache",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.remove-package-cache"
@@ -158,6 +134,30 @@
               }
             },
             {
+              "id": "1fea7095-4aa4-39e5-87fb-6cb9fa564a0c",
+              "name": "resources.rules.remove-package-cache",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.remove-package-cache"
+              },
+              "fullDescription": {
+                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3009](https://github.com/hadolint/hadolint/wiki/DL3009)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.remove-package-cache"
+                ]
+              }
+            },
+            {
               "id": "0e1fc10d-8dbc-3b80-9677-0ec45389ca3b",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
@@ -183,6 +183,30 @@
             },
             {
               "id": "7ddcf446-551a-3a28-aa56-07154130dc20",
+              "name": "resources.rules.raptor-interesting-api-calls",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.raptor-interesting-api-calls"
+              },
+              "fullDescription": {
+                "text": "Locate all calls to interesting and potentially insecure API functions (candidate points). The auditor can backtrace from these candidate points to find pathways allowing access from untrusted input."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Locate all calls to interesting and potentially insecure API functions (candidate points). The auditor can backtrace from these candidate points to find pathways allowing access from untrusted input.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Locate all calls to interesting and potentially insecure API functions (candidate points). The auditor can backtrace from these candidate points to find pathways allowing access from untrusted input.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/0xdea/ghidra-scripts/blob/main/Rhabdomancer.java](https://github.com/0xdea/ghidra-scripts/blob/main/Rhabdomancer.java)\n - [https://github.com/x509cert/banned/blob/master/banned.h](https://github.com/x509cert/banned/blob/master/banned.h)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/28719-banned-api-usage-use-updated-function-replacement](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/28719-banned-api-usage-use-updated-function-replacement)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.raptor-interesting-api-calls"
+                ]
+              }
+            },
+            {
+              "id": "2d7d057a-654a-36f6-b540-b69780b1c0f8",
               "name": "resources.rules.raptor-interesting-api-calls",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-interesting-api-calls"
@@ -254,30 +278,6 @@
               }
             },
             {
-              "id": "2d7d057a-654a-36f6-b540-b69780b1c0f8",
-              "name": "resources.rules.raptor-interesting-api-calls",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-interesting-api-calls"
-              },
-              "fullDescription": {
-                "text": "Locate all calls to interesting and potentially insecure API functions (candidate points). The auditor can backtrace from these candidate points to find pathways allowing access from untrusted input."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Locate all calls to interesting and potentially insecure API functions (candidate points). The auditor can backtrace from these candidate points to find pathways allowing access from untrusted input.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Locate all calls to interesting and potentially insecure API functions (candidate points). The auditor can backtrace from these candidate points to find pathways allowing access from untrusted input.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/0xdea/ghidra-scripts/blob/main/Rhabdomancer.java](https://github.com/0xdea/ghidra-scripts/blob/main/Rhabdomancer.java)\n - [https://github.com/x509cert/banned/blob/master/banned.h](https://github.com/x509cert/banned/blob/master/banned.h)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/28719-banned-api-usage-use-updated-function-replacement](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/28719-banned-api-usage-use-updated-function-replacement)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.raptor-interesting-api-calls"
-                ]
-              }
-            },
-            {
               "id": "5e55f0b7-f447-3f1a-ac78-6208a5cc41ef",
               "name": "resources.rules.raptor-interesting-api-calls",
               "shortDescription": {
@@ -302,6 +302,30 @@
               }
             },
             {
+              "id": "57754a4c-cc70-3b15-8ff4-a6db03780d03",
+              "name": "resources.rules.missing-ratelimit",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-ratelimit"
+              },
+              "fullDescription": {
+                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart](https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-ratelimit"
+                ]
+              }
+            },
+            {
               "id": "e0203e9b-a2f0-33a6-82c0-398d1467bf20",
               "name": "resources.rules.raptor-interesting-api-calls",
               "shortDescription": {
@@ -322,6 +346,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.raptor-interesting-api-calls"
+                ]
+              }
+            },
+            {
+              "id": "6397da92-6461-31d0-bbcc-78cb00ccd15f",
+              "name": "resources.rules.missing-ratelimit",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-ratelimit"
+              },
+              "fullDescription": {
+                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart](https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-ratelimit"
                 ]
               }
             },
@@ -375,50 +423,27 @@
               }
             },
             {
-              "id": "6397da92-6461-31d0-bbcc-78cb00ccd15f",
-              "name": "resources.rules.missing-ratelimit",
+              "id": "f223474e-c5b3-356a-b9c9-9387ad3df00e",
+              "name": "python.lang.security.deserialization.pickle.avoid-pickle",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-ratelimit"
+                "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
               },
               "fullDescription": {
-                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
+                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
               },
               "defaultConfiguration": {
                 "enabled": true,
                 "level": "warning"
               },
+              "helpUri": "https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle",
               "help": {
-                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart](https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart)\n"
+                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle)\n - [https://docs.python.org/3/library/pickle.html](https://docs.python.org/3/library/pickle.html)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.missing-ratelimit"
-                ]
-              }
-            },
-            {
-              "id": "57754a4c-cc70-3b15-8ff4-a6db03780d03",
-              "name": "resources.rules.missing-ratelimit",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-ratelimit"
-              },
-              "fullDescription": {
-                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart](https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-ratelimit"
+                  "python.lang.security.deserialization.pickle.avoid-pickle"
                 ]
               }
             },
@@ -472,52 +497,26 @@
               }
             },
             {
-              "id": "f223474e-c5b3-356a-b9c9-9387ad3df00e",
-              "name": "python.lang.security.deserialization.pickle.avoid-pickle",
+              "id": "2fdc9e83-59b8-310b-9bc0-eb50651f97bc",
+              "name": "resources.rules.open-never-closed",
               "shortDescription": {
-                "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
+                "text": "Opengrep Finding: resources.rules.open-never-closed"
               },
               "fullDescription": {
-                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+                "text": "file object opened without corresponding close"
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "warning"
+                "level": "error"
               },
-              "helpUri": "https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle",
               "help": {
-                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle)\n - [https://docs.python.org/3/library/pickle.html](https://docs.python.org/3/library/pickle.html)\n"
+                "text": "file object opened without corresponding close\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "file object opened without corresponding close\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "python.lang.security.deserialization.pickle.avoid-pickle"
-                ]
-              }
-            },
-            {
-              "id": "5c077edc-62a4-3453-ac71-1de8e3de8723",
-              "name": "python.lang.security.deserialization.pickle.avoid-pickle",
-              "shortDescription": {
-                "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
-              },
-              "fullDescription": {
-                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "helpUri": "https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle",
-              "help": {
-                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle)\n - [https://docs.python.org/3/library/pickle.html](https://docs.python.org/3/library/pickle.html)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "python.lang.security.deserialization.pickle.avoid-pickle"
+                  "resources.rules.open-never-closed"
                 ]
               }
             },
@@ -546,26 +545,27 @@
               }
             },
             {
-              "id": "2fdc9e83-59b8-310b-9bc0-eb50651f97bc",
-              "name": "resources.rules.open-never-closed",
+              "id": "5c077edc-62a4-3453-ac71-1de8e3de8723",
+              "name": "python.lang.security.deserialization.pickle.avoid-pickle",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.open-never-closed"
+                "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
               },
               "fullDescription": {
-                "text": "file object opened without corresponding close"
+                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "error"
+                "level": "warning"
               },
+              "helpUri": "https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle",
               "help": {
-                "text": "file object opened without corresponding close\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "file object opened without corresponding close\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle)\n - [https://docs.python.org/3/library/pickle.html](https://docs.python.org/3/library/pickle.html)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.open-never-closed"
+                  "python.lang.security.deserialization.pickle.avoid-pickle"
                 ]
               }
             },
@@ -618,7 +618,7 @@
               }
             },
             {
-              "id": "af944a13-bc3d-354d-a697-ab2e52abad61",
+              "id": "fdf66d9e-ea14-3ad2-b1a7-8da4e10e6ff2",
               "name": "python.lang.security.deserialization.pickle.avoid-pickle",
               "shortDescription": {
                 "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
@@ -643,7 +643,7 @@
               }
             },
             {
-              "id": "fdf66d9e-ea14-3ad2-b1a7-8da4e10e6ff2",
+              "id": "af944a13-bc3d-354d-a697-ab2e52abad61",
               "name": "python.lang.security.deserialization.pickle.avoid-pickle",
               "shortDescription": {
                 "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
@@ -688,6 +688,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.open-never-closed"
+                ]
+              }
+            },
+            {
+              "id": "86f4165f-0f93-3885-ab69-aeb92c11a730",
+              "name": "resources.rules.missing-ratelimit",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-ratelimit"
+              },
+              "fullDescription": {
+                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart](https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-ratelimit"
                 ]
               }
             },
@@ -740,56 +764,7 @@
               }
             },
             {
-              "id": "86f4165f-0f93-3885-ab69-aeb92c11a730",
-              "name": "resources.rules.missing-ratelimit",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-ratelimit"
-              },
-              "fullDescription": {
-                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart](https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-ratelimit"
-                ]
-              }
-            },
-            {
               "id": "b03d99d7-95d8-3368-a0cb-4f4efe5868fa",
-              "name": "python.lang.security.deserialization.pickle.avoid-pickle",
-              "shortDescription": {
-                "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
-              },
-              "fullDescription": {
-                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "helpUri": "https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle",
-              "help": {
-                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle)\n - [https://docs.python.org/3/library/pickle.html](https://docs.python.org/3/library/pickle.html)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "python.lang.security.deserialization.pickle.avoid-pickle"
-                ]
-              }
-            },
-            {
-              "id": "9a499b06-2335-3c31-8fe8-54117f7ab62a",
               "name": "python.lang.security.deserialization.pickle.avoid-pickle",
               "shortDescription": {
                 "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
@@ -864,7 +839,7 @@
               }
             },
             {
-              "id": "f94b7728-36d9-34c2-acea-46873e99d4c6",
+              "id": "9a499b06-2335-3c31-8fe8-54117f7ab62a",
               "name": "python.lang.security.deserialization.pickle.avoid-pickle",
               "shortDescription": {
                 "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
@@ -912,6 +887,31 @@
                   "python.lang.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1"
                 ]
               }
+            },
+            {
+              "id": "f94b7728-36d9-34c2-acea-46873e99d4c6",
+              "name": "python.lang.security.deserialization.pickle.avoid-pickle",
+              "shortDescription": {
+                "text": "Opengrep Finding: python.lang.security.deserialization.pickle.avoid-pickle"
+              },
+              "fullDescription": {
+                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle",
+              "help": {
+                "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.lang.security.deserialization.pickle.avoid-pickle)\n - [https://docs.python.org/3/library/pickle.html](https://docs.python.org/3/library/pickle.html)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "python.lang.security.deserialization.pickle.avoid-pickle"
+                ]
+              }
             }
           ],
           "language": "en-US",
@@ -925,11 +925,11 @@
       "language": "en-US",
       "results": [
         {
-          "ruleId": "a8e486e3-d8fa-3062-9620-1f29e1798b88",
+          "ruleId": "bc1ee7a2-47f6-32bc-90d6-9f950d92f0c2",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
           },
           "locations": [
             {
@@ -939,19 +939,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 26,
+                  "startLine": 3,
                   "startColumn": 1,
-                  "endLine": 26,
-                  "endColumn": 19,
+                  "endLine": 3,
+                  "endColumn": 12,
                   "snippet": {
-                    "text": "RUN apt-get update -y \\"
+                    "text": "FROM nvidia/cuda:${CUDA_VERSION}-devel-${DISTRIBUTION_VERSION}"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "d7db5ef3922b8de8c9203c94c0d8b1267cba4ba8805509096e47c85496649e5a330c615002487f73f8be1dd05ffb580dd1741cd8aa1848b3fb33915080fd7cdc_0"
+            "matchBasedId/v1": "a2ed60f6d79c98b85267c91c48e7ce2d0a382c4cdb1f5ab87346d54628c39f345bc27572cdde3b3a2473ce55aa400c4bd67cc41bbdb371eb06d01489d6a82c79_0"
           },
           "properties": {}
         },
@@ -987,6 +987,37 @@
           "properties": {}
         },
         {
+          "ruleId": "a8e486e3-d8fa-3062-9620-1f29e1798b88",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docker/UCXPy-MOFED.dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "RUN apt-get update -y \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "d7db5ef3922b8de8c9203c94c0d8b1267cba4ba8805509096e47c85496649e5a330c615002487f73f8be1dd05ffb580dd1741cd8aa1848b3fb33915080fd7cdc_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "0f796f12-eab0-3b21-bc2f-d705ffa15070",
           "kind": "fail",
           "level": "warning",
@@ -1018,11 +1049,11 @@
           "properties": {}
         },
         {
-          "ruleId": "bc1ee7a2-47f6-32bc-90d6-9f950d92f0c2",
+          "ruleId": "10fc2849-b8e4-3f84-9a79-91510ffe868a",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+            "text": "By not specifying a USER, a program in the container may run as 'root'. This is a security hazard. If an attacker can control a process running as root, they may have control over the container. Ensure that the last USER in a Dockerfile is a USER other than 'root'."
           },
           "locations": [
             {
@@ -1032,19 +1063,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 3,
+                  "startLine": 66,
                   "startColumn": 1,
-                  "endLine": 3,
-                  "endColumn": 12,
+                  "endLine": 66,
+                  "endColumn": 76,
                   "snippet": {
-                    "text": "FROM nvidia/cuda:${CUDA_VERSION}-devel-${DISTRIBUTION_VERSION}"
+                    "text": "CMD [\"/root/bench-all.sh\", \"tcp,cuda_copy,cuda_ipc\", \"rc,cuda_copy\", \"all\"]"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "a2ed60f6d79c98b85267c91c48e7ce2d0a382c4cdb1f5ab87346d54628c39f345bc27572cdde3b3a2473ce55aa400c4bd67cc41bbdb371eb06d01489d6a82c79_0"
+            "matchBasedId/v1": "c09f72c78fde3a2993d3ad7e5d4df422fbe3fd29eac4c05f057c96f7fac9ce0a0c2b09258e1316a348fe28eac9c433133e6ce072c90ff93f225dfee7f3dace4a_0"
           },
           "properties": {}
         },
@@ -1076,37 +1107,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "9eca58b2f488e6d15cc09a9626b1426136eb686ed19feaf3dfc5de704396022f2791d8d1ec0cdd6ef120b9852a73aecb64fae8a8eefa6f60692d4e5d260d3c07_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "10fc2849-b8e4-3f84-9a79-91510ffe868a",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "By not specifying a USER, a program in the container may run as 'root'. This is a security hazard. If an attacker can control a process running as root, they may have control over the container. Ensure that the last USER in a Dockerfile is a USER other than 'root'."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "docker/UCXPy-MOFED.dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 66,
-                  "startColumn": 1,
-                  "endLine": 66,
-                  "endColumn": 76,
-                  "snippet": {
-                    "text": "CMD [\"/root/bench-all.sh\", \"tcp,cuda_copy,cuda_ipc\", \"rc,cuda_copy\", \"all\"]"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "c09f72c78fde3a2993d3ad7e5d4df422fbe3fd29eac4c05f057c96f7fac9ce0a0c2b09258e1316a348fe28eac9c433133e6ce072c90ff93f225dfee7f3dace4a_0"
           },
           "properties": {}
         },
@@ -1173,6 +1173,37 @@
           "properties": {}
         },
         {
+          "ruleId": "2d7d057a-654a-36f6-b540-b69780b1c0f8",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Locate all calls to interesting and potentially insecure API functions (candidate points). The auditor can backtrace from these candidate points to find pathways allowing access from untrusted input."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ucp/_libs/src/c_util.c",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 9,
+                  "endLine": 44,
+                  "endColumn": 72,
+                  "snippet": {
+                    "text": "        snprintf(port_str, max_str_size, \"%d\", ntohs(addr_in.sin_port));"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "fc35dafdf953afd7a632e4b8491d1879bd2d4dae6964e75cdd2f3aa81f4326bb39d625c6ba540e1a8d6664056f9a994fe8192cbc0731ee7237db45b9c5bcc505_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "c7dc42a0-eaf3-37ee-86fe-f5e5d32bbb8a",
           "kind": "fail",
           "level": "warning",
@@ -1235,37 +1266,6 @@
           "properties": {}
         },
         {
-          "ruleId": "2d7d057a-654a-36f6-b540-b69780b1c0f8",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Locate all calls to interesting and potentially insecure API functions (candidate points). The auditor can backtrace from these candidate points to find pathways allowing access from untrusted input."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ucp/_libs/src/c_util.c",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 44,
-                  "startColumn": 9,
-                  "endLine": 44,
-                  "endColumn": 72,
-                  "snippet": {
-                    "text": "        snprintf(port_str, max_str_size, \"%d\", ntohs(addr_in.sin_port));"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "fc35dafdf953afd7a632e4b8491d1879bd2d4dae6964e75cdd2f3aa81f4326bb39d625c6ba540e1a8d6664056f9a994fe8192cbc0731ee7237db45b9c5bcc505_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "5e55f0b7-f447-3f1a-ac78-6208a5cc41ef",
           "kind": "fail",
           "level": "warning",
@@ -1297,6 +1297,37 @@
           "properties": {}
         },
         {
+          "ruleId": "57754a4c-cc70-3b15-8ff4-a6db03780d03",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Function 'blocking_handler' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ucp/_libs/utils_test.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "endLine": 14,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "def blocking_handler(request, exception, finished):\n    assert exception is None\n    finished[0] = True"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "3b5714c362f7994dbf95000fe1f4d612d9d698b566be20fbbc5f2dad9be6e8673670b6b6f9f84aebef65216d5d57419051803e7136767abf514329c21db41a0e_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "e0203e9b-a2f0-33a6-82c0-398d1467bf20",
           "kind": "fail",
           "level": "warning",
@@ -1324,6 +1355,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "7dbb6403d3b19767bcbd111ed5a758200bfaf65eedf0f692185310d044770709bb9f6b123de5f518776c93d2cd610f2eb1aed9920a41c37f72214cacde76fa94_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "6397da92-6461-31d0-bbcc-78cb00ccd15f",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Function 'non_blocking_handler' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ucp/_libs/utils_test.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 1,
+                  "endLine": 66,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "def non_blocking_handler(request, exception, completed_cb):\n    if exception is not None:\n        print(exception)\n    assert exception is None\n    completed_cb()"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "864c0dbc0304781998d20ca3f1e88cd34210fced0dd36c8d0687847853a768a6eb2bea25a12c30bcdf4474492a058b40703ce194a6fdd224a144c948cd7a7939_0"
           },
           "properties": {}
         },
@@ -1390,64 +1452,33 @@
           "properties": {}
         },
         {
-          "ruleId": "6397da92-6461-31d0-bbcc-78cb00ccd15f",
+          "ruleId": "f223474e-c5b3-356a-b9c9-9387ad3df00e",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Function 'non_blocking_handler' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
+            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "ucp/_libs/utils_test.py",
+                  "uri": "ucp/benchmarks/cudf_merge.py",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 62,
-                  "startColumn": 1,
-                  "endLine": 66,
-                  "endColumn": 19,
+                  "startLine": 53,
+                  "startColumn": 14,
+                  "endLine": 53,
+                  "endColumn": 34,
                   "snippet": {
-                    "text": "def non_blocking_handler(request, exception, completed_cb):\n    if exception is not None:\n        print(exception)\n    assert exception is None\n    completed_cb()"
+                    "text": "    header = pickle.dumps(header)"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "864c0dbc0304781998d20ca3f1e88cd34210fced0dd36c8d0687847853a768a6eb2bea25a12c30bcdf4474492a058b40703ce194a6fdd224a144c948cd7a7939_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "57754a4c-cc70-3b15-8ff4-a6db03780d03",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Function 'blocking_handler' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ucp/_libs/utils_test.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 1,
-                  "endLine": 14,
-                  "endColumn": 23,
-                  "snippet": {
-                    "text": "def blocking_handler(request, exception, finished):\n    assert exception is None\n    finished[0] = True"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "3b5714c362f7994dbf95000fe1f4d612d9d698b566be20fbbc5f2dad9be6e8673670b6b6f9f84aebef65216d5d57419051803e7136767abf514329c21db41a0e_0"
+            "matchBasedId/v1": "3f4f1d7472fc0d00257609468c59ecaa93276d8c4e2c118d8683333ce7bd126457f3faaa42697016004ac491322727e8cb9ec44fe861efb825f209903f7b1629_0"
           },
           "properties": {}
         },
@@ -1514,11 +1545,11 @@
           "properties": {}
         },
         {
-          "ruleId": "f223474e-c5b3-356a-b9c9-9387ad3df00e",
+          "ruleId": "2fdc9e83-59b8-310b-9bc0-eb50651f97bc",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+            "text": "file object opened without corresponding close"
           },
           "locations": [
             {
@@ -1528,50 +1559,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 53,
-                  "startColumn": 14,
-                  "endLine": 53,
-                  "endColumn": 34,
+                  "startLine": 569,
+                  "startColumn": 9,
+                  "endLine": 569,
+                  "endColumn": 52,
                   "snippet": {
-                    "text": "    header = pickle.dumps(header)"
+                    "text": "        server_file = tempfile.NamedTemporaryFile()"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "3f4f1d7472fc0d00257609468c59ecaa93276d8c4e2c118d8683333ce7bd126457f3faaa42697016004ac491322727e8cb9ec44fe861efb825f209903f7b1629_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "5c077edc-62a4-3453-ac71-1de8e3de8723",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ucp/benchmarks/cudf_merge.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 16,
-                  "endLine": 75,
-                  "endColumn": 55,
-                  "snippet": {
-                    "text": "    cudf_typ = pickle.loads(header[\"type-serialized\"])"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "fa533bc3578c948bc753e7e5591125c7cfdb7724cfea63f8988359a98e24b5dcceb2f0c50794f05f82a1db35c98e510ae3210cf5b36c50965dbc114eb8520e1d_1"
+            "matchBasedId/v1": "e5d3593347fffa4d04f06630434300ab0f921a2f482a6856375a582ba695ce34d8d18133c6038c6ce6bffbcda789c668faa6dccbd103ba21762ed70858b59369_0"
           },
           "properties": {}
         },
@@ -1607,11 +1607,11 @@
           "properties": {}
         },
         {
-          "ruleId": "2fdc9e83-59b8-310b-9bc0-eb50651f97bc",
+          "ruleId": "5c077edc-62a4-3453-ac71-1de8e3de8723",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "file object opened without corresponding close"
+            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
           },
           "locations": [
             {
@@ -1621,19 +1621,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 569,
-                  "startColumn": 9,
-                  "endLine": 569,
-                  "endColumn": 52,
+                  "startLine": 75,
+                  "startColumn": 16,
+                  "endLine": 75,
+                  "endColumn": 55,
                   "snippet": {
-                    "text": "        server_file = tempfile.NamedTemporaryFile()"
+                    "text": "    cudf_typ = pickle.loads(header[\"type-serialized\"])"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "e5d3593347fffa4d04f06630434300ab0f921a2f482a6856375a582ba695ce34d8d18133c6038c6ce6bffbcda789c668faa6dccbd103ba21762ed70858b59369_0"
+            "matchBasedId/v1": "fa533bc3578c948bc753e7e5591125c7cfdb7724cfea63f8988359a98e24b5dcceb2f0c50794f05f82a1db35c98e510ae3210cf5b36c50965dbc114eb8520e1d_1"
           },
           "properties": {}
         },
@@ -1700,37 +1700,6 @@
           "properties": {}
         },
         {
-          "ruleId": "af944a13-bc3d-354d-a697-ab2e52abad61",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ucp/benchmarks/utils.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 70,
-                  "startColumn": 11,
-                  "endLine": 70,
-                  "endColumn": 28,
-                  "snippet": {
-                    "text": "    msg = pickle.dumps(obj)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "9bda5eec38e9bfc264777d2f0fb225a5c8ba4030f8becbc0abc65880b16b2dea22b190c51c85bdbe89ea81f99212dac58d931ba8854a33b83363c0d0895e8230_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "fdf66d9e-ea14-3ad2-b1a7-8da4e10e6ff2",
           "kind": "fail",
           "level": "warning",
@@ -1762,6 +1731,37 @@
           "properties": {}
         },
         {
+          "ruleId": "af944a13-bc3d-354d-a697-ab2e52abad61",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ucp/benchmarks/utils.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 11,
+                  "endLine": 70,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "    msg = pickle.dumps(obj)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "9bda5eec38e9bfc264777d2f0fb225a5c8ba4030f8becbc0abc65880b16b2dea22b190c51c85bdbe89ea81f99212dac58d931ba8854a33b83363c0d0895e8230_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "cf4a5d67-b5a4-395c-bd95-4455270e3208",
           "kind": "fail",
           "level": "warning",
@@ -1789,6 +1789,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "39c82799ef6cc711d5cfa8a6082e560c55e08c194637a513f96dd3b05d5ca08817705b2882d40dbf4aac0645c8bd9ae70067fee6c54978925b5e6b2f468b4f1c_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "86f4165f-0f93-3885-ab69-aeb92c11a730",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Function '_cb_func' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ucp/comm.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "endLine": 18,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "def _cb_func(request, exception, event_loop, future):\n    if event_loop.is_closed() or future.done():\n        return\n    if exception is not None:\n        future.set_exception(exception)\n    else:\n        future.set_result(True)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "5571f5890e17e28dda2d418c8c546354202020f10af346803e14398fb473f766c8a7f12c08680ecd9ad63421485e020a68449bbc2825e69c16dcc9ffbdf39f20_0"
           },
           "properties": {}
         },
@@ -1855,37 +1886,6 @@
           "properties": {}
         },
         {
-          "ruleId": "86f4165f-0f93-3885-ab69-aeb92c11a730",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Function '_cb_func' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ucp/comm.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 1,
-                  "endLine": 18,
-                  "endColumn": 32,
-                  "snippet": {
-                    "text": "def _cb_func(request, exception, event_loop, future):\n    if event_loop.is_closed() or future.done():\n        return\n    if exception is not None:\n        future.set_exception(exception)\n    else:\n        future.set_result(True)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "5571f5890e17e28dda2d418c8c546354202020f10af346803e14398fb473f766c8a7f12c08680ecd9ad63421485e020a68449bbc2825e69c16dcc9ffbdf39f20_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "b03d99d7-95d8-3368-a0cb-4f4efe5868fa",
           "kind": "fail",
           "level": "warning",
@@ -1913,37 +1913,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "9753074fa84afa8c34760e6a903c9e4dd8b8d6ad4143f5e3754a3ca6b26ad265117587c36e6fd1b411906848e2b3f05de848a8002a1a197e70c0858eb9752e1c_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "9a499b06-2335-3c31-8fe8-54117f7ab62a",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ucp/endpoint_reuse.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 92,
-                  "startColumn": 39,
-                  "endLine": 92,
-                  "endColumn": 85,
-                  "snippet": {
-                    "text": "                await ep_new.send_obj(pickle.dumps(existing_ep.ep._tags[\"msg_recv\"]))"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "9753074fa84afa8c34760e6a903c9e4dd8b8d6ad4143f5e3754a3ca6b26ad265117587c36e6fd1b411906848e2b3f05de848a8002a1a197e70c0858eb9752e1c_1"
           },
           "properties": {}
         },
@@ -2010,7 +1979,7 @@
           "properties": {}
         },
         {
-          "ruleId": "f94b7728-36d9-34c2-acea-46873e99d4c6",
+          "ruleId": "9a499b06-2335-3c31-8fe8-54117f7ab62a",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -2024,19 +1993,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 95,
+                  "startLine": 92,
                   "startColumn": 39,
-                  "endLine": 95,
-                  "endColumn": 57,
+                  "endLine": 92,
+                  "endColumn": 85,
                   "snippet": {
-                    "text": "                await ep_new.send_obj(pickle.dumps(None))"
+                    "text": "                await ep_new.send_obj(pickle.dumps(existing_ep.ep._tags[\"msg_recv\"]))"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "9753074fa84afa8c34760e6a903c9e4dd8b8d6ad4143f5e3754a3ca6b26ad265117587c36e6fd1b411906848e2b3f05de848a8002a1a197e70c0858eb9752e1c_2"
+            "matchBasedId/v1": "9753074fa84afa8c34760e6a903c9e4dd8b8d6ad4143f5e3754a3ca6b26ad265117587c36e6fd1b411906848e2b3f05de848a8002a1a197e70c0858eb9752e1c_1"
           },
           "properties": {}
         },
@@ -2068,6 +2037,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "0654c9d4ef965babdb2bc0d00332d24a26c4b3383b7fb162f76f6940d3df02a6c85d461bbd1a20f0412c3161e5f53fc4eabcbdb564d4c068a53c39d1b7d556c7_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "f94b7728-36d9-34c2-acea-46873e99d4c6",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Avoid using `pickle`, which is known to lead to code execution vulnerabilities. When unpickling, the serialized data could be manipulated to run arbitrary code. Instead, consider serializing the relevant data as JSON or a similar text-based serialization format."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ucp/endpoint_reuse.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 39,
+                  "endLine": 95,
+                  "endColumn": 57,
+                  "snippet": {
+                    "text": "                await ep_new.send_obj(pickle.dumps(None))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "9753074fa84afa8c34760e6a903c9e4dd8b8d6ad4143f5e3754a3ca6b26ad265117587c36e6fd1b411906848e2b3f05de848a8002a1a197e70c0858eb9752e1c_2"
           },
           "properties": {}
         }
